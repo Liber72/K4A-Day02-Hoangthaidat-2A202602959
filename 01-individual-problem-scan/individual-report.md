@@ -24,7 +24,7 @@
 | 5 |Tốn thời gian |Check quy hoạch tính pháp lý của sổ đỏ|Nhà đầu tư cá nhân, Môi giới BĐS |Việc xác minh pháp lý tốn từ vài ngày đến vài tuần.|
 | 6 |Pain từ người khác |các chủ quán ăn nhỏ tại việt nam bán trên nhiều ứng dụng giao đồ ăn như Grab, ShopeeFood, GoFood nên rất khó quản lý và kiểm soát đơn hàng |Chủ quán ăn nhỏ |Chủ quán thường mất trắng 2-5% doanh thu vì các khoản trừ mập mờ, các thuật toán chia sẻ voucher phức tạp của nền tảng mà họ không đủ sức ngồi đối soát từng đơn lẻ.|
 | 7 |Tốn thời gian |Tìm kiếm và xuất video gói hàng|Người bán online|Trong các vụ tranh chấp trả hàng và mất hàng, người bán phải tìm kiếm và xuất video gói hàng, tốn ít nhất 30-60 phút mỗi vụ. vì phải kiểm tra từng video gói hàng của nhiều ngày. |
-|8|AI có thể tốt hơn|Nhà đầu tư cá nhân|Nhiều nhà đầu tư cá nhân có nhu cầu giao dịch trên thị trường tài chính nhưng hường phải bỏ nhiều thời gian để cập nhật thông tin thị trường liên tục và tìm kiếm điểm vào lệnh,  .|
+|8|AI có thể tốt hơn|Nhà đầu tư cá nhân|Nhiều nhà đầu tư cá nhân có nhu cầu giao dịch trên thị trường tài chính nhưng hường phải bỏ nhiều thời gian để cập nhật thông tin thị trường liên tục và tìm kiếm điểm vào lệnh|các nhà giao dịch thường tốn từ 2-3 tiếng để tìm điểm vào lệnh dù đã có điều kiện rõ ràng về điểm vào lệnh.|
 
 > Gợi ý tự soi: tuần trước mất nhiều thời gian nhất vào việc gì? Việc gì hay trì hoãn? Người khác hay hỏi lại câu gì? Workflow nào ai cũng biết là chậm?
 
