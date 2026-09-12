@@ -7,7 +7,7 @@
 | STT | Họ và tên | Mã học viên | Vai trò trong nhóm (VD: facilitator, workflow, research, writer) |
 |-----|-----------|-------------|---------------------------------------------------------------|
 | 1   | Nguyễn Văn Huy | 2A202602428 |                          writer, research                       |
-| 2   | Hoàng Thái Đạt | 2A202602959 |                         research, facilitator                   |
+| 2   | Hoàng Thái Đạt | 2A202602959 |                         research, facilitator, writer                   |
 | 3   | Nguyễn Trọng Phúc | 2A202602552 |                      research, workflow                      |
 | 4   | Nguyễn Quốc Đạt | 2A202602369 |                        research, workflow                       |
 | 5   | Nguyễn Việt Hùng | 2A202602972 |                       research,facilitator                     |
@@ -41,10 +41,10 @@ Tài xế Xanh SM và chủ sở hữu xe điện VinFast gặp khó khăn trong
 
 | Cluster | Candidates included | Pattern chung | Ghi chú |
 |---|---|---|---|
-| A | Nguyễn Văn Huy, Nguyễn Quốc Đạt, Nguyễn Việt Hùng | Developer mất thời gian tìm kiếm, đọc và tổng hợp context kỹ thuật trước khi làm task | Phù hợp RAG / AI Search / Knowledge Assistant |
-| B | Nguyễn Văn Huy, Nguyễn Quốc Đạt, Nguyễn Việt Hùng, Hoàng Thái Đạt | Các workflow lặp lại có nhiều bước thủ công, cần thu thập/tổng hợp/xử lý để tạo output | Có thể dùng Rule hoặc Workflow; chưa nhất thiết cần Agent |
-| C | Nguyễn Văn Huy, Hoàng Thái Đạt | Thu thập/đọc dữ liệu → đối chiếu → kiểm tra theo rule → đưa ra kết quả | Có thể kết hợp OCR/Document AI + Rule Engine; bài pháp lý cần human review |
-| D (nếu có) | Nguyễn Trọng Phúc | Các vấn đề trong hệ sinh thái VinFast/Xanh SM liên quan vận hành và trải nghiệm khách hàng | Candidate trạm sạc tác động trực tiếp người dùng; candidate QA có workflow/metric rõ; candidate CSKH khả thi nhưng thiên về nội bộ |
+| A | 1, 10, 12 | Developer mất thời gian tìm kiếm, đọc và tổng hợp context kỹ thuật trước khi làm task | Phù hợp RAG / AI Search / Knowledge Assistant |
+| B | 2, 3, 4 | Các workflow lặp lại có nhiều bước thủ công, cần thu thập/tổng hợp/xử lý để tạo output | Có thể dùng Rule hoặc Workflow; chưa nhất thiết cần Agent |
+| C | 5, 6 | Thu thập/đọc dữ liệu → đối chiếu → kiểm tra theo rule → đưa ra kết quả | Có thể kết hợp OCR/Document AI + Rule Engine; bài pháp lý cần human review |
+| D | 7 | Các vấn đề trong hệ sinh thái VinFast/Xanh SM liên quan vận hành và trải nghiệm khách hàng | Candidate trạm sạc tác động trực tiếp người dùng; candidate QA có workflow/metric rõ; candidate CSKH khả thi nhưng thiên về nội bộ |
 
 ### 3.3. Shortlist (giữ 2-3 bài trả lời được 7 câu hỏi worksheet)
 
@@ -144,7 +144,7 @@ Vì vậy nhóm không nên build lại một charging assistant tổng quát; h
 
 ### 5.1. Current workflow bản nhóm
 
-Dán workflow hoặc link file: `02-group-problem-statement-workflow.png/pdf/md`
+Link file: [02-group-problem-workflow.png](./02-group-problem-workflow.png)
 
 ```text
 [1 Kiểm tra pin - người lái] → [2 Xem trạm sạc trên app] → [3 So sánh khoảng cách/traffic/trạng thái trụ]
