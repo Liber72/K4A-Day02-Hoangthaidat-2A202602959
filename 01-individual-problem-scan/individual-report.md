@@ -17,14 +17,14 @@
 
 | # | Lăng kính (Lặp lại / Tốn thời gian / AI có thể tốt hơn / Pain từ người khác) | Problem quan sát được | Ai chịu ảnh hưởng? | Dấu hiệu thật (số + bằng chứng) |
 |---|---|---|---|---|
-| 1 |Pain từ người khác |Nhân viên kế toán phải tự kiểm tra từng giấy tờ và điền các thông tin liên quan vào excel để đối soát và báo cáo cho chủ doanh nghiệp|Nhân viên kế toán, Chủ doanh nghiệp||
+| 1 |Pain từ người khác |Nhân viên kế toán phải tự kiểm tra từng giấy tờ và điền các thông tin liên quan vào excel để đối soát và báo cáo cho chủ doanh nghiệp|Nhân viên kế toán, Chủ doanh nghiệp|Chỉ 38% đã triển khai ít nhất một giải pháp ứng dụng trí tuệ nhân tạo (AI) trong xử lý dữ liệu và nghiệp vụ kế toán.|
 | 2 |AI có thể tốt hơn |Chủ đầm tôm dùng mắt thường nhìn màu nước hoặc dùng giấy quỳ đo pH 1-2 lần/ngày. |Chủ đầm tôm, quản lý ao tôm|Con người không thể theo dõi liên tục 24/7 và tính toán sự tương quan chéo giữa các biến số (Oxy hòa tan, pH, nhiệt độ, độ mặn). Khi dịch bệnh xảy ra, tỷ lệ hao hụt thường lên tới 50-80% giá trị ao nuôi chỉ trong 2-3 ngày.|
 | 3 |Lặp lại |Chấm điểm bài kiểm tra trắc nghiệm |Giáo viên|Giáo viên thường phụ trách quản lý nhiều lớp, mỗi lớp có số lượng học viên lớn, việc chấm điểm thủ công tốn nhiều thời gian và công sức nhưng vẫn có thể sai sót.|
 | 4 |Lặp lại |Đối soát các giao dịch online |Doanh nghiệp vừa và nhỏ|Các chủ doanh nghiệp SME đặc biệt là các doanh nghiệp như quán dịch vụ, thường xuyên phải đối soát các giao dịch online được báo cáo từ các cơ sở với giao dịch thực tế trên tài khoản ngân hàng. Điều này tốn ít nhất 30-60 phút mỗi ngày đối với các doanh nghiệp có quy mô nhỏ và vừa, thậm chí còn chưa chắc chính xác.|
 | 5 |Tốn thời gian |Check quy hoạch tính pháp lý của sổ đỏ|Nhà đầu tư cá nhân, Môi giới BĐS |Việc xác minh pháp lý tốn từ vài ngày đến vài tuần.|
 | 6 |Pain từ người khác |các chủ quán ăn nhỏ tại việt nam bán trên nhiều ứng dụng giao đồ ăn như Grab, ShopeeFood, GoFood nên rất khó quản lý và kiểm soát đơn hàng |Chủ quán ăn nhỏ |Chủ quán thường mất trắng 2-5% doanh thu vì các khoản trừ mập mờ, các thuật toán chia sẻ voucher phức tạp của nền tảng mà họ không đủ sức ngồi đối soát từng đơn lẻ.|
 | 7 |Tốn thời gian |Tìm kiếm và xuất video gói hàng|Người bán online|Trong các vụ tranh chấp trả hàng và mất hàng, người bán phải tìm kiếm và xuất video gói hàng, tốn ít nhất 30-60 phút mỗi vụ. vì phải kiểm tra từng video gói hàng của nhiều ngày. |
-
+|8|AI có thể tốt hơn|Nhà đầu tư cá nhân|Nhiều nhà đầu tư cá nhân có nhu cầu giao dịch trên thị trường tài chính nhưng hường phải bỏ nhiều thời gian để cập nhật thông tin thị trường liên tục và tìm kiếm điểm vào lệnh,  .|
 
 > Gợi ý tự soi: tuần trước mất nhiều thời gian nhất vào việc gì? Việc gì hay trì hoãn? Người khác hay hỏi lại câu gì? Workflow nào ai cũng biết là chậm?
 
@@ -115,11 +115,6 @@ FUTURE STATE — 5 phút
 [1 Upload sao kê + báo cáo: 1'] → [2 AI auto-matching: 1' (tự động)] → [3 Human review chênh lệch: 3']  <-- human boundary
 
 Fallback: nếu AI matching sai → hiển thị danh sách giao dịch chưa khớp kèm top 3 gợi ý khớp, con người chọn tay. Luôn giữ bản gốc để đối chiếu.
-```
-
-File đính kèm (nếu vẽ riêng): `01-individual-problem-scan-workflow-card-1.png`
-
----
 
 #### Problem Card #2 — Tìm kiếm và xuất video gói hàng
 
@@ -179,11 +174,6 @@ FUTURE STATE — 2 phút
 [1 Nhập mã đơn hàng vào hệ thống: 0.5'] → [2 AI tìm + trả video đã index: 0.5' (tự động)] → [3 Human review + upload: 1']  <-- human boundary
 
 Fallback: nếu AI không nhận diện được mã đơn trong video → hiển thị các video trong khung giờ gần nhất để người dùng lọc thủ công (vẫn nhanh hơn xem toàn bộ).
-```
-
-File đính kèm: `01-individual-problem-scan-workflow-card-2.png`
-
----
 
 #### Problem Card #3 — Check quy hoạch tính pháp lý của sổ đỏ
 
@@ -244,38 +234,37 @@ FUTURE STATE — 30 phút
 
 [1 Upload ảnh sổ đỏ: 1'] → [2 AI OCR + trích xuất số thửa, tờ BĐ: 1' (tự động)] → [3 AI đối chiếu quy hoạch + cảnh báo rủi ro: 2' (tự động)] → [4 Human review báo cáo pháp lý: 25']  <-- human boundary
 
-Fallback: nếu AI không có dữ liệu quy hoạch của khu vực đó → thông báo rõ "chưa có dữ liệu", gợi ý liên hệ UBND trực tiếp. Không bao giờ kết luận "an toàn" khi thiếu dữ liệu.
-```
-
-File đính kèm: `01-individual-problem-scan-workflow-card-3.png`
-
----
+Fallback: nếu AI không có dữ liệu quy hoạch của khu vực đó → thông báo rõ "chưa có dữ liệu", gợi ý liên hệ nhân viên trực tiếp. Không bao giờ kết luận "an toàn" khi thiếu dữ liệu.
 
 ### 2.3. Card muốn pitch nhất (chuẩn bị 2 phút)
 
 **Card tôi muốn pitch nhất:**
 
-```text
+```Problem Card #3 — Check quy hoạch tính pháp lý của sổ đỏ
 
 ```
 
 **Vì sao (2-3 câu: workflow gì, số đo gì, impact gì):**
 
-```text
+```
+1. **Thời gian:** Việc tra cứu và đối chiếu thông tin quy hoạch và các thông tin pháp lý của sổ đỏ tốn khoảng 1-2 tuần.
+2. **Tần suất:** Xảy ra khi nhà đầu tư hoặc môi giới cần thẩm định tính pháp lý của sổ đỏ trước khi ra quyết định đầu tư.
+3. **Số người/nhóm chịu ảnh hưởng:** Nhà đầu tư cá nhân và môi giới bất động sản — nhóm có nhu cầu cao và sẵn sàng trả chi phí dịch vụ nếu được giải quyết triệt để.
+4. **Đo lường được:** Có thể đo bằng thời gian từ khi nhận sổ đỏ đến khi có báo cáo chính thức, chi phí thuê dịch vụ, và tỷ lệ sai sót.
 
 ```
 
 **Câu hỏi tôi muốn nhóm challenge (1-2 câu hỏi đúng chỗ yếu):**
 
-```text
-
+```
+Bạn nghĩ quy hoạch của nhà nước có dễ để AI tổng hợp được không? Tổng hợp lại có hợp pháp không? 
 ```
 
 **AI phản biện Card (nếu có):**
-- Điểm yếu AI chỉ ra:
-- Tôi sửa gì:
+- Điểm yếu AI chỉ ra: Data supply không có vì quy hoạch có thể bị xung đột từ nhiều nguồn, Scope quá rộn khi triển khai ở nhiều tỉnh thành.
+- Tôi sửa gì: tập chung vào quy hoạch Hà Nội và TP HCM, vì hai khu vực này có dữ liệu quy hoạch đã được số hóa.
 
 ### Self-check nộp phần 01
-- [ ] Có 5+ problems + top 3 Cards đủ field
-- [ ] Mỗi Card có workflow trước/sau + bottleneck + metric + fallback
-- [ ] Đã chọn 1 card pitch + câu hỏi challenge
+- [x] Có 5+ problems + top 3 Cards đủ field
+- [x] Mỗi Card có workflow trước/sau + bottleneck + metric + fallback
+- [x] Đã chọn 1 card pitch + câu hỏi challenge
